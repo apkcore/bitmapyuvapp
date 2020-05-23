@@ -8,6 +8,9 @@ import com.apkcore.jnilib.BitmapNative
 import com.apkcore.purejavalib.BitmapUtil
 import kotlinx.android.synthetic.main.activity_main.*
 
+/**
+ * 参考https://qiita.com/alzybaad/items/23b7a8db40f22614009d
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
