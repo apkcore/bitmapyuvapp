@@ -1,0 +1,4 @@
+rootProject.name='BitmapYuvApp'
+include ':app'
+include ':purejavalib'
+include ':jnilib'
