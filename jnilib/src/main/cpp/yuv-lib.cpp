@@ -3,7 +3,7 @@
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_apkcore_jnilib_BitmapNative_rgbToYuv(JNIEnv *env, jobject thiz, jbyteArray rgba, jint w,
+Java_com_apkcore_jnilib_BitmapNative_rgbToYuv(JNIEnv *env, jclass clazz, jbyteArray rgba, jint w,
                                               jint h, jbyteArray nv21) {
     jbyte *rgb = env->GetByteArrayElements(rgba, NULL);
     jbyte *yuv = env->GetByteArrayElements(nv21, NULL);

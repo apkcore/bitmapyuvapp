@@ -34,10 +34,10 @@ public class BitmapNative {
         int nv21Size = area * 3 / 2;
         byte[] nv21 = new byte[nv21Size];
 
-        new BitmapNative().rgbToYuv(array, w, h, nv21);
+        BitmapNative.rgbToYuv(array, w, h, nv21);
 
         return nv21;
     }
 
-    public native void rgbToYuv(byte[] rgba, int w, int h, byte[] nv21);
+    public native static void rgbToYuv(byte[] rgba, int w, int h, byte[] nv21);
 }
